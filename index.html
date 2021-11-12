@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Flight Simulator</title>
+        <title>Flight Simulator (DONE)</title>
         <link rel = "stylesheet" type = "text/css" href = "styles.css" />
         <script src = "scripts.js"></script>
     </head>
@@ -19,14 +19,14 @@
                 <h3>Astronaut Chat</h3>
                 <p>Houston, we are ready when you are!</p>
             </div>
-            <div id = "shuttleBackground" style = "position: relative;">
+            <div id = "shuttleBackground" class = "shuttleBackground" style = "position: relative;">
                 <img src = "LaunchCode_rocketline_white.png" height = "75" width = "75" id = "rocket"/>
             </div>
             <div style = "text-align: center; display: inline-block;">
-                    <button id = "upControl">Up</button>
-                    <button id = "downControl">Down</button>
-                    <button id = "rightControl">Right</button>
-                    <button id = "leftControl">Left</button>
+                    <button>Up</button>
+                    <button>Down</button>
+                    <button>Right</button>
+                    <button>Left</button>
                     <h3>Space Shuttle Height</h3>
                     <p id='spaceShuttleHeight'>0</p><p style = "display: inline-block;"> miles</p>
             </div>
@@ -36,5 +36,6 @@
             <button id = "landing">Land</button>
             <button id = "missionAbort">Abort Mission</button>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     </body>
 </html>

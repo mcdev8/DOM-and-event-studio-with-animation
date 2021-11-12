@@ -1,12 +1,19 @@
-#shuttleBackground {
-  background-color: green;
-  display: inline-block;
-  height: 80%;
-  width: 40%;
+.shuttleBackground, .shuttleInFlight {
+    background-color: rgb(109, 175, 102);
+    display: inline-block;
+    height: 80%;
+    width: 40%;
+    margin:10px;
 }
 
+/* Dynamicaly applied in script.js*/
+.shuttleInFlight {
+    background-color: rgb(124, 179, 200);
+}
+
+/* positioning dynamicaly edited in script.js */
 #rocket {
-  position: absolute;
-  bottom: -7px;
-  left: -23px;
+    position: absolute;
+    bottom: 0px;
+    right: calc(50% - 37px); /* center: 50% width minus half of image width (75/2)*/
 }
